@@ -1,0 +1,23 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block titulo %}
+{{ post.titulo }}
+{% endblock %}
+{% block titulo_imagen %}
+{{ post.titulo}}
+{% endblock %}
+{% block descripcion_imagen%}
+{{ post.descripcion }}
+{% endblock %}
+
+{% block imagen %}
+{{ post.image }}
+{% endblock %}
+
+{% block buscar %}
+{% endblock %}
+
+{% block contenido%}
+{{ post.contenido | safe }}
+{% endblock %}
